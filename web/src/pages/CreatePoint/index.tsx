@@ -43,6 +43,8 @@ const CreatePoint = () => {
   const [selectedItems, setSelectedItems] = useState<number[]>([])
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0, 0])
 
+  const history = useHistory()
+
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords
@@ -142,6 +144,8 @@ const CreatePoint = () => {
     await api.post('points', data)
     
     alert('Ponto de coleta criado')
+
+    history.push('/')
   }
   
   return (
