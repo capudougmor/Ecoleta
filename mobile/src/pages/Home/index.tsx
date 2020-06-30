@@ -13,7 +13,11 @@ const Home = () => {
       imageStyle={{width: 274, height: 368 }}
     >
       <View style={styles.main} >
-        <Image source={require('../../assets/logo.png')} />
+          <ImageBackground 
+            source={require('../../assets/logo.png')} 
+            imageStyle={{width: 187, height: 44, }}
+            ></ImageBackground>
+        {/* <Image source={require('../../assets/logo.png')} /> */}
         <Text style={styles.title} >Seu market place de coleta de residuos</Text>
         <Text style={styles.description} >Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</Text>
 
@@ -38,9 +42,13 @@ const styles = StyleSheet.create({
     padding: 32,
   },
 
+  logo: {
+    width: 146,
+  },
+
   main: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
 
   title: {
@@ -48,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontFamily: 'Ubuntu_700Bold',
     maxWidth: 260,
-    marginTop: 64,
+    marginTop: 264,
   },
 
   description: {
