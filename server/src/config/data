@@ -1,0 +1,13 @@
+{
+	"name": "Mercado do juca",
+  "email": "diogo@gmail",
+	"whatsapp": "313213146",
+	"latitude": "15.555555",
+	"longitude": "21.54897987",
+	"city": "Guarda mor",
+	"uf": "MG",
+	"items": [
+		1, 4, 6
+	]
+	
+}

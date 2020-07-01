@@ -19,6 +19,7 @@ routes.get('/points/:id', pointsController.show)
 
 
 routes.post('/points', upload.single('image'), pointsController.create)
+// routes.post('/points', upload.array('fotos'), pointsController.create) esta é se fosse varias fotos
 
 export default routes
 
